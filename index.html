@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lailaha Illallah - Islamic Calligraphy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 50%, #1a472a 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .calligraphy-main {
+            font-family: 'Traditional Arabic', 'Simplified Arabic', serif;
+            font-size: 72px;
+            font-weight: bold;
+            color: #1a472a;
+            margin: 40px 0;
+            line-height: 1.8;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 6px rgba(26, 71, 42, 0.1);
+        }
+
+        .calligraphy-secondary {
+            font-family: 'Traditional Arabic', 'Simplified Arabic', serif;
+            font-size: 64px;
+            font-weight: bold;
+            color: #2d5a3d;
+            margin: 30px 0;
+            line-height: 1.8;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(26, 71, 42, 0.1);
+        }
+
+        .title {
+            font-size: 28px;
+            color: #1a472a;
+            margin-bottom: 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .transliteration {
+            font-size: 20px;
+            color: #2d5a3d;
+            margin: 30px 0;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .translation {
+            font-size: 18px;
+            color: #666;
+            margin: 20px 0;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .decorative-line {
+            height: 3px;
+            background: linear-gradient(to right, transparent, #1a472a, transparent);
+            margin: 30px 0;
+            border-radius: 2px;
+        }
+
+        .meaning {
+            margin-top: 40px;
+            padding: 25px;
+            background: #f0f6f3;
+            border-left: 5px solid #1a472a;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .meaning h3 {
+            color: #1a472a;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .meaning p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .shahada-parts {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .shahada-part {
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+        }
+
+        .shahada-part-arabic {
+            font-family: 'Traditional Arabic', 'Simplified Arabic', serif;
+            font-size: 36px;
+            color: #1a472a;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .shahada-part-text {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+            color: #888;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            .calligraphy-main {
+                font-size: 48px;
+            }
+
+            .calligraphy-secondary {
+                font-size: 42px;
+            }
+
+            .title {
+                font-size: 22px;
+            }
+
+            .transliteration {
+                font-size: 16px;
+            }
+
+            .shahada-parts {
+                gap: 15px;
+            }
+
+            .shahada-part-arabic {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 15px;
+                border-radius: 15px;
+            }
+
+            .calligraphy-main {
+                font-size: 36px;
+                margin: 25px 0;
+            }
+
+            .calligraphy-secondary {
+                font-size: 32px;
+            }
+
+            .title {
+                font-size: 18px;
+            }
+
+            .transliteration {
+                font-size: 14px;
+            }
+
+            .shahada-parts {
+                flex-direction: column;
+            }
+
+            .shahada-part {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">The Islamic Declaration of Faith</h1>
+        <p class="subtitle">The Shahada</p>
+
+        <div class="decorative-line"></div>
+
+        <div class="calligraphy-main">
+            لا إله إلا الله محمد رسول الله
+        </div>
+
+        <div class="transliteration">
+            Lā ilāha illallāh, Muhammadun rasūlullāh
+        </div>
+
+        <div class="translation">
+            "There is no god but Allah, and Muhammad is the Messenger of Allah"
+        </div>
+
+        <div class="decorative-line"></div>
+
+        <div class="meaning">
+            <h3>Meaning & Significance</h3>
+            <p>
+                The Shahada is the first pillar of Islam and the fundamental declaration of Islamic faith. It consists of two parts:
+            </p>
+        </div>
+
+        <div class="shahada-parts">
+            <div class="shahada-part">
+                <div class="shahada-part-arabic">لا إله إلا الله</div>
+                <div class="shahada-part-text">
+                    <strong>First Part:</strong><br>
+                    "There is no god but Allah"<br>
+                    <em>The declaration of Monotheism (Tawhid)</em>
+                </div>
+            </div>
+            <div class="shahada-part">
+                <div class="shahada-part-arabic">محمد رسول الله</div>
+                <div class="shahada-part-text">
+                    <strong>Second Part:</strong><br>
+                    "Muhammad is the Messenger of Allah"<br>
+                    <em>The declaration of Prophethood</em>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>SubhanAllah wa Bihamdih | Islamic Calligraphy & Heritage</p>
+        </div>
+    </div>
+</body>
+</html>
